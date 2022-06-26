@@ -2,7 +2,7 @@
     <div class="title">
         <h1>Categoria</h1>
     </div>
-    <button class="mat-elevation-z8" mat-stroked-button color="primary">Nova Categoria</button>
+    <button class="mat-elevation-z8" (click)="navegarParaCategoriaCreate()" mat-stroked-button color="primary">Nova Categoria</button>
     <div class="mat-elevation-z8 content-table" >
         <table class="table" mat-table [dataSource]="categorias">
 
@@ -38,6 +38,7 @@
               <th class="mat-header" mat-header-cell *matHeaderCellDef> Ações </th>
               <td mat-cell *matCellDef="let row">
               <a class="edit" href="#">
+                <!-- (click)="navegarParaCategoriaEdit()"-->
                   <i class="material-icons">edit</i>
               </a> 
               <a class="delete"  href="#">
